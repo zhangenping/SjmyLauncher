@@ -1,0 +1,31 @@
+﻿<Window x:Class="SjmyLauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SjmyLauncher" xmlns:local1="clr-namespace:SjmyLauncher.View"
+        mc:Ignorable="d"
+        Title="sjmy_launcher" Height="1000" Width="1450">
+        <Window.Resources>
+            <local:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+        </Window.Resources>
+    <Grid Drop="Grid_Drop"  AllowDrop="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="500"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label1"  Grid.Row="0" Grid.Column="0" Content="打开方式" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Margin="29,0,0,2" Width="121" Height="33"/>
+        <local1:StartMyView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+        <local1:UserButton  Grid.Row="1" Grid.Column="0" Grid.RowSpan="2"/>
+        <local1:FileView  Grid.Row="1" Grid.Column="1" Margin="0,0,10,10"/>
+        <local1:LogView Grid.Row="1" Grid.Column="2"  Grid.ColumnSpan="2" Margin="0,0,10,10"/>
+        <ProgressBar Style="{x:Null}" Foreground="#673ab7" Grid.Row="2" Grid.Column = "1" Grid.ColumnSpan="2" Height="15" Margin="0 0 10 10" Minimum="0" Maximum="100" Value="{Binding ProgressCount}"
+            Visibility="{Binding IsProgressVisible, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+    </Grid>
+</Window>

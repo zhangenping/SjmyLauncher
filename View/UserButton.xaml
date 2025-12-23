@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="SjmyLauncher.View.UserButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d"
+			 d:DesignHeight="700" d:DesignWidth="200">
+    <!--<UserControl.Resources>
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="Height" Value="55"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Margin" Value="1"/>
+        </Style>
+    </UserControl.Resources>-->
+    <Grid>
+        <StackPanel>
+            <Button Content="清空日志" Style="{StaticResource MaterialDesignFlatButton}" Command="{Binding cmd_ClearLog}" IsEnabled="{Binding IsClickBtn}"/>
+            <Button Content="重新生成所有FDB" Command="{Binding cmd_RebuildFdb}" Style="{StaticResource MaterialDesignFlatButton}" IsEnabled="{Binding IsClickBtn}"/>
+            <Button Content="生成单个FDB" Command="{Binding cmd_RebuildOneFileFdb}" Style="{StaticResource MaterialDesignFlatButton}" IsEnabled="{Binding IsClickBtn}"/>
+            <Button Content="重新加密ini目录" Command="{Binding cmd_RebuildIni}" Style="{StaticResource MaterialDesignFlatButton}" IsEnabled="{Binding IsClickBtn}"/>
+            <Button Content="重新生成DataTable" Command="{Binding cmd_RebuildDataTable}" Style="{StaticResource MaterialDesignFlatButton}" IsEnabled="{Binding IsClickBtn}"/>
+            <Button Content="生成单个dat" Command="{Binding cmd_RebuildOneIni}" Style="{StaticResource MaterialDesignFlatButton}" IsEnabled="{Binding IsClickBtn}"/>
+            <Button Content="导出日志" Command="{Binding cmd_ExportLog}" Style="{StaticResource MaterialDesignFlatButton}" IsEnabled="{Binding IsClickBtn}"/>
+            <Button Content="启动KFDBEditor" Command="{Binding cmd_StarKFEBEditor}" Style="{StaticResource MaterialDesignFlatButton}" IsEnabled="{Binding IsClickBtn}"/>
+            <Button Content="重新导出TXT" Command="{Binding cmd_RebuildAllFdbToTxt}" Style="{StaticResource MaterialDesignFlatButton}" IsEnabled="{Binding IsClickBtn}"/>
+            <Button Content="TXT转CSV" Command="{Binding cmd_TxtToCsv}" Style="{StaticResource MaterialDesignFlatButton}" IsEnabled="{Binding IsClickBtn}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
