@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\workspace\code\MB\2026_Q1\src\SjmyLauncher\obj\x64\Debug\
+E:\SjmyLauncher\obj\x64\Debug\
 SjmyLauncher
 none
 false
 DEBUG;TRACE
-D:\workspace\code\MB\2026_Q1\src\SjmyLauncher\App.xaml
-5-1674901298
+E:\SjmyLauncher\App.xaml
+5557625469
 
-21-209078590
-1311766856891
+20-814790776
+1361274837688
 MainWindow.xaml;View\FileView.xaml;View\LogView.xaml;View\StartMyView.xaml;View\UserButton.xaml;
 
-True
+False
 
