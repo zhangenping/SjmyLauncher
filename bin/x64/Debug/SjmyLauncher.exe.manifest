@@ -114,14 +114,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="kfdb_clr.dll" size="184320">
-      <assemblyIdentity name="kfdb_clr" version="1.0.8746.36082" language="neutral" processorArchitecture="amd64" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="kfdb_clr.dll" size="311808">
+      <assemblyIdentity name="kfdb_clr" version="1.0.8871.30391" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Sd/7cbGG3YcDPnItvZVv2gO0Jeh7cz2MCKIEPIdc1gY=</dsig:DigestValue>
+        <dsig:DigestValue>D7VxRXfbdw1WX4ITiWDVC8ol+qguGqnG1hP2NJn2EJc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -186,14 +186,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SjmyLauncher.exe" size="129536">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SjmyLauncher.exe" size="128512">
       <assemblyIdentity name="SjmyLauncher" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>O4TdpmRIvSGg5yhrff+VvDKsjb1wjbuuRbONUWLZXDc=</dsig:DigestValue>
+        <dsig:DigestValue>rRfpkQd0eQinPqmTbO0t5ORQlclMtmC03Pc1qdV6JhE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

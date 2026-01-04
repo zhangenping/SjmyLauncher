@@ -447,7 +447,7 @@ namespace KFDBFinder.Extensions
 
         public KFDB_DATAROW this[int row]
         {
-            get
+            get 
             {
                 return Rows[row];
             }
@@ -806,7 +806,8 @@ namespace KFDBFinder.Extensions
             {
                 Name = "GameData";
                 Ptr = Marshal.StringToHGlobalAnsi("GameData.dll");
-
+                // 打印当前工作目录，排查路径基准问题
+                Console.WriteLine("当前工作目录：" + Environment.CurrentDirectory);
                 unsafe
                 {
                     try
@@ -815,6 +816,8 @@ namespace KFDBFinder.Extensions
                     }
                     catch (Exception ex)
                     {
+
+
                         KFDBClient.Instance.OutputMessage(ex);
                     }
                 }
