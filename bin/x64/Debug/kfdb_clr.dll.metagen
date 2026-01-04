@@ -1,0 +1,41 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly kfdb_clr, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class KFDBFinder.KFDBInfoFinderClr: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(SByte*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    GetDirAmount(): PrivateScope, Public, HideBySig
+    GetDirName(UInt32): PrivateScope, Public, HideBySig
+    GetDirFileAmount(UInt32): PrivateScope, Public, HideBySig
+    GetDirFileId(UInt32, UInt32): PrivateScope, Public, HideBySig
+    GetWorkDirId(): PrivateScope, Public, HideBySig
+    SetWorkDirId(UInt32): PrivateScope, Public, HideBySig
+    GetFileAmount(): PrivateScope, Public, HideBySig
+    GetFilePath(UInt32, SByte*): PrivateScope, Public, HideBySig
+    GetFileIndexField(UInt32): PrivateScope, Public, HideBySig
+    GetFileName(UInt32): PrivateScope, Public, HideBySig
+    GetFileDesc(UInt32): PrivateScope, Public, HideBySig
+    GetFieldAmount(UInt32): PrivateScope, Public, HideBySig
+    GetFieldType(UInt32, UInt32): PrivateScope, Public, HideBySig
+    GetFieldName(UInt32, UInt32): PrivateScope, Public, HideBySig
+    GetFieldDesc(UInt32, UInt32): PrivateScope, Public, HideBySig
+    IsLoad(): PrivateScope, Public, HideBySig
+    Load(SByte*): PrivateScope, Public, HideBySig
+    Load(): PrivateScope, Public, HideBySig
+    Unload(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Struct KFDB_FIELD_TYPE: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
